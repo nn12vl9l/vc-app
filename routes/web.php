@@ -46,3 +46,5 @@ Route::get('controller/hello', [App\Http\Controllers\Messagecontroller::class, '
 Route::get('controller/var', [App\Http\Controllers\Messagecontroller::class, 'var']);
 Route::get('controller/word/{msg}', [App\Http\Controllers\Messagecontroller::class, 'word']);
 Route::get('controller/word/{name}/{msg}', [App\Http\Controllers\Messagecontroller::class, 'word2']);
+
+Route::get('/language', [App\Http\Controllers\LanguageController::class, 'index']);
