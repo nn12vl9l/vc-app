@@ -42,3 +42,7 @@ Route::get('/view/word/{name}/{msg}', function($name, $msg){
 });
 
 
+Route::get('controller/hello', [App\Http\Controllers\Messagecontroller::class, 'hello']);
+Route::get('controller/var', [App\Http\Controllers\Messagecontroller::class, 'var']);
+Route::get('controller/word/{msg}', [App\Http\Controllers\Messagecontroller::class, 'word']);
+Route::get('controller/word/{name}/{msg}', [App\Http\Controllers\Messagecontroller::class, 'word2']);
